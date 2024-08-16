@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dp" />
+            <solid android:color="#D3D3D3" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <gradient
+                    android:startColor="#0000FF"
+                    android:endColor="#FF0000"
+                    android:angle="0"
+                    android:type="linear">
+                    <item android:color="#FFFF00" android:offset="0.185" /> <!-- yellow for slightly less than healthy -->
+                    <item android:color="#00FF00" android:offset="0.25" /> <!-- green for healthy weight -->
+                    <item android:color="#FFA500" android:offset="0.625" /> <!-- Orange for slightly overweight -->
+                </gradient>
+            </shape>
+        </clip>
+    </item>
+</layer-list>
